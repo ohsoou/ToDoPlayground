@@ -3,10 +3,10 @@ import {AppBar, Toolbar, Typography} from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from '@mui/icons-material/Menu';
 
-export default function Header () {
+const Header = () => {
     return (
         <>
-            <AppBar position="sticky" color="primary">
+            <AppBar position="fixed" color="primary">
                 <Toolbar>
                     <IconButton
                         edge="start"
@@ -24,3 +24,5 @@ export default function Header () {
         </>
     );
 }
+
+export default Header;

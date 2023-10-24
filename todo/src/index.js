@@ -1,14 +1,14 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import {createBrowserRouter, RouterProvider, createRoutesFromElements, Route} from "react-router-dom";
-import ListBoard from "./pages/ListBoard";
+import TodoBoard from "./pages/TodoBoard";
 import Header from "./components/Header";
 import {CssBaseline, GlobalStyles} from "@mui/material";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
     <Route
-        element={<ListBoard />}
+        element={<TodoBoard />}
         path="/"
     />
 ));
